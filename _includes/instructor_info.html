@@ -1,16 +1,16 @@
 <dl id="instructor_info">
   <dt>Instructor</dt>
-  <dd>{{page.instructor}}</dd>
+  <dd>{{ site.course.instructor.name }}</dd>
   <dt>Office</dt>
-  <dd></dd>
+  <dd>{{ site.course.instructor.office }}</dd>
   <dt>Office Hours</dt>
-  <dd></dd>
+  <dd>{{ site.course.instructor.office_hours }}</dd>
   <dt>Contact</dt>
   <dd>
     <ul id="contact">
-      <li><b>Email:</b> </li>
-      <li><b>Phone:</b> </li>
-      <li><b>Twitter:</b> </li>
+      <li><b>Email:</b> {{ site.course.instructor.email }}</li>
+      <li><b>Phone:</b> {{ site.course.instructor.phone }}</li>
+      <li><b>Twitter:</b> <a href="http://twitter.com/{{ site.course.instructor.twitter }}">@{{ site.course.instructor.twitter }}</a></li>
     </ul>
   </dd>
 </dl>

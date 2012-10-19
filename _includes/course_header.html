@@ -1,2 +1,4 @@
-<h1>{{page.title}} <small>Course Name</small></h1>
-<h2>{{page.instructor}}</h2>
+<h1>{{page.title}} <small>{{ site.course.number }}: {{ site.course.name }}</small></h1>
+<p class="lead">
+  A course taught by {{ site.course.instructor.name }} in {{ site.course.term }}.
+</p>

@@ -1,6 +1,5 @@
 ---
 title:
-instructor:
 layout: default
 ---
 

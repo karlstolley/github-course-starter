@@ -2,16 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Course Name: {{page.title}}</title>
+  <title>{{site.course.name}}: {{page.title}}</title>
 
   <!--Set the viewport to handle responsive design-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" media="screen" href="assets/css/screen.css">
-  <link rel="stylesheet" media="print" href="assets/css/print.css">
+  <meta name="author" content="{{ site.course.instructor.name }}">
+  <meta name="description" content="{{ site.course.description }}">
+
+  <link rel="stylesheet" media="screen" href="/{{site.course.base_url}}assets/css/screen.css">
+  <link rel="stylesheet" media="print" href="/{{site.course.base_url}}assets/css/print.css">
 
   <!--[if lt IE 9]>
-    <script src="assets/js/html5.js"></script>
+    <script src="/{{site.course.base_url}}assets/js/html5.js"></script>
   <![endif]-->
 
 </head>
@@ -39,7 +42,7 @@
 
 <!--jQuery & Twitter Bootstrap JavaScript-->
 <script type="javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script type="javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="javascript" src="/{{site.course.base_url}}assets/js/bootstrap.min.js"></script>
 
 </body>
 </html>
