@@ -14,7 +14,7 @@ course:
   number:
   name:
   # Keep the description brief, about 140 chars
-  description: A graduate course in the theory and practice of standards-based web design.
+  description:
   # E.g., Spring 2013:
   term:
   instructor:
